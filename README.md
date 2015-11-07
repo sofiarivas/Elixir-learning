@@ -39,3 +39,18 @@ Enum.map( [1,2,3,4] , &(&1*&1) )
 
 Exs.- lo interpreta.
 Ex.- lo compila.
+
+
+:::: Comparison operators ::::
+
+a===b # strict equality (so 1 === 1.0 is false) 
+a!==b # strict inequality (so 1 !== 1.0 is true) 
+a==b # value equality (so 1 == 1.0 is true) 
+a!=b # value inequality (so 1 != 1.0 is false) 
+a>b # normal comparison
+a>=b # : 
+a<b#: 
+a<=b # :
+
+Otherwise comparison is based on type according to this rule:
+number < atom < reference < function < port < pid < tuple < map < list < binary
